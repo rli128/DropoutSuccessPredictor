@@ -54,4 +54,4 @@ Here are the features we used from the dataset
 - **Machine Learning:** Logistic Regression  
 
 ## **Video Walkthrough**
-Watch the full project explanation here: [Insert Video Link]  
+Watch the full project explanation here: [Insert Video Link](https://drive.google.com/file/d/1Y8KrUE5yAcFxz-9ogdzlZdY7cBoxbE_P/view?usp=sharing)]  
