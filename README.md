@@ -30,8 +30,9 @@ This project analyzes student dropout risks using machine learning models while 
 | Model Version       | Accuracy | TPR Disparity (Gender) | Fairness Intervention  |
 |--------------------|----------|-----------------------|----------------------|
 | **Baseline**      | 84.4%    | 24.7%                 | None                |
-| **Augmented Data** | 83.9%    | **4.8%**              | Synthetic Data       |
+| **Augmented Data** | 83.9%    | 4.8%              | Synthetic Data       |
 | **Reweighted Model** | 84.1%    | 6.2%                 | Class Reweighting    |
+| **Post-Processing Intervention** | 80.2% | **2.5%** | Affirmative action |
 
 ## **Technologies Used**
 - **Python:** Pandas, NumPy, Scikit-Learn  
