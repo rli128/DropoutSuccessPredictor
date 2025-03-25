@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>693ee87a838548c3a3fa71eb7530299f</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="exploratory-analysis-and-fairness-metrics"
+class="cell markdown" id="3CvGHplJlKOu">
+<h1>Exploratory Analysis and Fairness Metrics</h1>
+<h2 id="1-context">1. Context</h2>
+<p><strong>Dataset:</strong> Predict Students' Dropout and Academic
+Success</p>
+<p>Our dataset was created by a higher education institution made from
+several disjoint datasets to predict a student's dropout and academic
+success. Each instance is a unique student and the information was
+presumably gathered from when they applied to the institution. The
+dataset was created to identify students at risk of dropping out in
+order to give them the support they need to succeed.</p>
+</section>
+<div class="cell code" data-execution_count="614" id="BsIcY78HpI-2">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> classification_report, confusion_matrix</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> LabelEncoder</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;data.csv&#39;</span>, delimiter<span class="op">=</span><span class="st">&#39;;&#39;</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[df[<span class="st">&#39;Target&#39;</span>] <span class="op">!=</span> <span class="st">&#39;Enrolled&#39;</span>]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>columns_to_keep <span class="op">=</span> [</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Gender&#39;</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Target&#39;</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Marital status&#39;</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Application mode&#39;</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Previous qualification&#39;</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Previous qualification (grade)&#39;</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mother&#39;s qualification&quot;</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Father&#39;s qualification&quot;</span>,</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Admission grade&#39;</span>,</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Scholarship holder&#39;</span>,</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Age at enrollment&#39;</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Curricular units 1st sem (grade)&#39;</span>,</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Curricular units 2nd sem (grade)&#39;</span>,</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Tuition fees up to date&#39;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[columns_to_keep]</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>label <span class="op">=</span> <span class="st">&#39;Target&#39;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>sensitive_attr <span class="op">=</span> <span class="st">&#39;Gender&#39;</span></span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>Sensitive Attribute: Gender 1: male, 0: Female</p>
+</div>
+<div class="cell markdown" id="lxxLWjQ8DIuH">
+<p><strong>Encode the target:</strong></p>
+<p>Graduate = 1 \ Dropout = 0</p>
+</div>
+<div class="cell code" data-execution_count="615" id="TuURjB_oD6p5">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>le_target <span class="op">=</span> LabelEncoder()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Target_encoded&#39;</span>] <span class="op">=</span> le_target.fit_transform(df[<span class="st">&#39;Target&#39;</span>])</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df.drop(<span class="st">&#39;Target&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<section id="2-code-accuracy-and-fairness-metrics" class="cell markdown"
+id="ivVy6llWgarm">
+<h2>2. Code: Accuracy and Fairness Metrics</h2>
+</section>
+<div class="cell markdown" id="GWGBjFiM0itv">
+<p><strong>Train the Baseline:</strong></p>
+</div>
+<div class="cell code" data-execution_count="616"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="kpivmsvN0mWa" data-outputId="5734796d-7e33-4d4d-9777-04c65bf93132">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop(<span class="st">&#39;Target_encoded&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">&#39;Target_encoded&#39;</span>]</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.3</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LogisticRegression(max_iter<span class="op">=</span><span class="dv">2000</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>model.fit(X_train, y_train)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model.predict(X_test)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>accuracy <span class="op">=</span> model.score(X_test, y_test)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Accuracy: </span><span class="sc">{</span>accuracy<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Accuracy: 0.844
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="rnyL1UOKgfLf">
+<p><strong>Fairness Metrics Reported:</strong></p>
+</div>
+<div class="cell markdown" id="QlEaaynV3zDa">
+<ul>
+<li><p><strong>Equal Opportunity</strong></p>
+<p>To calculate our Equal Opportunity Disparity, we need to find TPRs
+for each gender.</p></li>
+</ul>
+</div>
+<div class="cell code" data-execution_count="617"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="H4ybIfI5HxMU" data-outputId="a0499a77-13ae-4627-f61c-1be202727023">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_eop <span class="op">=</span> X_test.copy()</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df_eop[<span class="st">&#39;y_test&#39;</span>] <span class="op">=</span> y_test</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df_eop[<span class="st">&#39;y_pred&#39;</span>] <span class="op">=</span> y_pred</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>tpr_genders <span class="op">=</span> {}</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> gender <span class="kw">in</span> df_eop[<span class="st">&#39;Gender&#39;</span>].unique():</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    df_gender <span class="op">=</span> df_eop[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> gender</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    tpr <span class="op">=</span> df_eop[df_gender <span class="op">&amp;</span> (df_eop[<span class="st">&#39;y_test&#39;</span>] <span class="op">==</span> <span class="dv">1</span>)][<span class="st">&#39;y_test&#39;</span>].count() <span class="op">/</span> df_eop[df_gender][<span class="st">&#39;y_test&#39;</span>].count()</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    tpr_genders[gender] <span class="op">=</span> tpr</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;True Positive Rates by Gender:&quot;</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> gender, tpr <span class="kw">in</span> tpr_genders.items():</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>gender<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>tpr<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>tpr_vals <span class="op">=</span> <span class="bu">list</span>(tpr_genders.values())</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>eo_disparity <span class="op">=</span> <span class="bu">max</span>(tpr_vals) <span class="op">-</span> <span class="bu">min</span>(tpr_vals)</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Equal Opportunity Disparity: </span><span class="sc">{</span>eo_disparity<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>True Positive Rates by Gender:
+0: 0.704
+1: 0.457
+Equal Opportunity Disparity: 0.247
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="hCClvHVMl700">
+<p>We find that Female students have a significantly higher TPR than
+male students, meaning that the model is better at predicting a positive
+outcome (Graduation), for female students compared to males.</p>
+</div>
+<div class="cell markdown" id="jeL_eyT2oxUp">
+<ul>
+<li><strong>Equalized Odds</strong></li>
+</ul>
+</div>
+<div class="cell code" data-execution_count="618"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="d3NhCeJO3xWa" data-outputId="55336f36-fc39-4442-8988-f7ad98e0f4da">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_eod <span class="op">=</span> X_test.copy()</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df_eod[<span class="st">&#39;y_true&#39;</span>] <span class="op">=</span> y_test</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>df_eod[<span class="st">&#39;y_pred&#39;</span>] <span class="op">=</span> y_pred</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>tpr_fpr_genders <span class="op">=</span> {}</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> gender <span class="kw">in</span> df_eod[<span class="st">&#39;Gender&#39;</span>].unique():</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> df_eod[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> gender</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    y_true_group <span class="op">=</span> df_eod[mask][<span class="st">&#39;y_true&#39;</span>]</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    y_pred_group <span class="op">=</span> df_eod[mask][<span class="st">&#39;y_pred&#39;</span>]</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    tn, fp, fn, tp <span class="op">=</span> confusion_matrix(y_true_group, y_pred_group).ravel()</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    tpr <span class="op">=</span> tp <span class="op">/</span> (tp <span class="op">+</span> fn) <span class="cf">if</span> (tp <span class="op">+</span> fn) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    fpr <span class="op">=</span> fp <span class="op">/</span> (fp <span class="op">+</span> tn) <span class="cf">if</span> (fp <span class="op">+</span> tn) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    tpr_fpr_genders[gender] <span class="op">=</span> {<span class="st">&#39;TPR&#39;</span>: tpr, <span class="st">&#39;FPR&#39;</span>: fpr}</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Equalized Odds Metrics by Gender:&quot;</span>)</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> gender, metrics <span class="kw">in</span> tpr_fpr_genders.items():</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>gender<span class="sc">}</span><span class="ss">: TPR = </span><span class="sc">{</span>metrics[<span class="st">&#39;TPR&#39;</span>]<span class="sc">:.3f}</span><span class="ss">, FPR = </span><span class="sc">{</span>metrics[<span class="st">&#39;FPR&#39;</span>]<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>tpr_values <span class="op">=</span> [metrics[<span class="st">&#39;TPR&#39;</span>] <span class="cf">for</span> metrics <span class="kw">in</span> tpr_fpr_genders.values()]</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>fpr_values <span class="op">=</span> [metrics[<span class="st">&#39;FPR&#39;</span>] <span class="cf">for</span> metrics <span class="kw">in</span> tpr_fpr_genders.values()]</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>tpr_disparity <span class="op">=</span> <span class="bu">max</span>(tpr_values) <span class="op">-</span> <span class="bu">min</span>(tpr_values)</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>fpr_disparity <span class="op">=</span> <span class="bu">max</span>(fpr_values) <span class="op">-</span> <span class="bu">min</span>(fpr_values)</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Equalized Odds Disparities: TPR Disparity = </span><span class="sc">{</span>tpr_disparity<span class="sc">:.3f}</span><span class="ss">, FPR Disparity = </span><span class="sc">{</span>fpr_disparity<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Equalized Odds Metrics by Gender:
+0: TPR = 0.972, FPR = 0.349
+1: TPR = 0.888, FPR = 0.312
+Equalized Odds Disparities: TPR Disparity = 0.084, FPR Disparity = 0.037
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="ttP6dicb8QTi">
+<p>Calculating our Equalized Odds Disparity gives us an interesting
+result. When comparing both TPRs and FPRs from both genders, the
+classifier performs relatively fairly. Since the disparity here is
+significantly lower, we should focus more on balancing Equal
+Opportunity.</p>
+</div>
+<section id="3-discussion-relevant-fairness-metrics"
+class="cell markdown" id="oC7R5E2SxTxK">
+<h2>3. Discussion: Relevant Fairness Metrics</h2>
+</section>
+<div class="cell markdown" id="RZAwLHtExxAf">
+<p>The fairness metrics we use for this model are <strong>Equal
+Opportunity</strong> and <strong>Equalized Odds</strong>. We use Equal
+Opportunity to ensure that students who are actually at risk of dropping
+out are identified at equal rates across different genders. We also want
+to ensure that TPRs and FPRs for both male and female students are
+similar so we also use Equalized Odds. This is important because we can
+balance both intervention and over-penalization. We ignore other
+fairness metrics like Demographic Parity because Demographic Parity
+would likely artificially inflate or deflate dropout predictions,
+ignoring potentially important external factors. We don't use Accuracy
+Parity because it may focus on improving the performance of the
+classifier at the cost of some fairness.</p>
+</div>
+<section id="4-code-unfairness-in-the-dataset" class="cell markdown">
+<h2>4. Code: Unfairness in the Dataset</h2>
+</section>
+<div class="cell code" data-execution_count="619" id="uDq4V6OP2ulU">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_male <span class="op">=</span> df[df[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> <span class="dv">1</span>]</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df_female <span class="op">=</span> df[df[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> <span class="dv">0</span>]</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Percentage of Female Students in dataset </span><span class="sc">{</span><span class="bu">len</span>(df_female)<span class="op">/</span><span class="bu">len</span>(df)<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>female_graduate_count <span class="op">=</span> (df_female[<span class="st">&#39;Target_encoded&#39;</span>] <span class="op">==</span> <span class="dv">1</span>).<span class="bu">sum</span>()</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Percentage of Female Graduate </span><span class="sc">{</span>(female_graduate_count<span class="op">/</span><span class="bu">len</span>(df_female))<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>male_graduate_count <span class="op">=</span> (df_male[<span class="st">&#39;Target_encoded&#39;</span>] <span class="op">==</span> <span class="dv">1</span>).<span class="bu">sum</span>()</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Percentage of Male Graduate </span><span class="sc">{</span>(male_graduate_count<span class="op">/</span><span class="bu">len</span>(df_male))<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Percentage of Female Students in dataset 0.656
+Percentage of Female Graduate 0.698
+Percentage of Male Graduate 0.439
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>We see that in the dataset that there are more females in the dataset
+than males however we do not think that it would make a big enough
+difference. However we did see that females had a way higher graduation
+rate than males do, (About 26% greater) and we think this may be the
+cause to the disparity with the two genders.</p>
+</div>
+<div class="cell code" data-execution_count="620">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>test_x_train_df <span class="op">=</span> X_train</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>test_y_train_df <span class="op">=</span> y_train</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>df_female_dropout <span class="op">=</span> df[(df[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> <span class="dv">0</span>) <span class="op">&amp;</span> (df[<span class="st">&#39;Target_encoded&#39;</span>] <span class="op">==</span> <span class="dv">0</span>)]</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>num_new_samples <span class="op">=</span> <span class="bu">int</span>(<span class="bu">len</span>(df_female_dropout) <span class="op">*</span> <span class="fl">0.5</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>df_synthetic <span class="op">=</span> df_female_dropout.sample(n<span class="op">=</span>num_new_samples, replace<span class="op">=</span><span class="va">True</span>).reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>numeric_cols <span class="op">=</span> df.select_dtypes(include<span class="op">=</span>[<span class="st">&#39;int64&#39;</span>, <span class="st">&#39;float64&#39;</span>]).columns</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> numeric_cols:</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    df_synthetic[col] <span class="op">+=</span> np.random.normal(<span class="dv">0</span>, <span class="fl">0.1</span>, size<span class="op">=</span><span class="bu">len</span>(df_synthetic))  </span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>X_synthetic <span class="op">=</span> df_synthetic.drop(columns<span class="op">=</span>[<span class="st">&#39;Target_encoded&#39;</span>])</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>y_synthetic <span class="op">=</span> df_synthetic[<span class="st">&#39;Target_encoded&#39;</span>]</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>test_x_train_df <span class="op">=</span> pd.concat([test_x_train_df, X_synthetic], ignore_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>test_y_train_df <span class="op">=</span> pd.concat([test_y_train_df, y_synthetic], ignore_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>new_model <span class="op">=</span> LogisticRegression(max_iter<span class="op">=</span><span class="dv">2000</span>)</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>new_model.fit(test_x_train_df, test_y_train_df)</span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>y_pred_new <span class="op">=</span> new_model.predict(X_test)</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>accuracy <span class="op">=</span> new_model.score(X_test, y_test)</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Accuracy: </span><span class="sc">{</span>accuracy<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Accuracy: 0.839
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="621">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df_eop <span class="op">=</span> X_test.copy()</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df_eop[<span class="st">&#39;y_test&#39;</span>] <span class="op">=</span> y_test</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df_eop[<span class="st">&#39;y_pred&#39;</span>] <span class="op">=</span> y_pred_new</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>tpr_genders <span class="op">=</span> {}</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> gender <span class="kw">in</span> df_eop[<span class="st">&#39;Gender&#39;</span>].unique():</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> df_eop[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> gender</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    y_true_group <span class="op">=</span> df_eop[mask][<span class="st">&#39;y_test&#39;</span>]</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    y_pred_group <span class="op">=</span> df_eop[mask][<span class="st">&#39;y_pred&#39;</span>]</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    tn, fp, fn, tp <span class="op">=</span> confusion_matrix(y_true_group, y_pred_group).ravel()</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>    tpr <span class="op">=</span> tp <span class="op">/</span> (tp <span class="op">+</span> fn) <span class="cf">if</span> (tp <span class="op">+</span> fn) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>    tpr_genders[gender] <span class="op">=</span> tpr</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;True Positive Rates by Gender:&quot;</span>)</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> gender, tpr <span class="kw">in</span> tpr_genders.items():</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>gender<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>tpr<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>tpr_vals <span class="op">=</span> <span class="bu">list</span>(tpr_genders.values())</span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>eo_disparity <span class="op">=</span> <span class="bu">max</span>(tpr_vals) <span class="op">-</span> <span class="bu">min</span>(tpr_vals)</span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Equal Opportunity Disparity: </span><span class="sc">{</span>eo_disparity<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>True Positive Rates by Gender:
+0: 0.937
+1: 0.888
+Equal Opportunity Disparity: 0.048
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>After adding synthetic data to increase the amount of female dropouts
+in the training set, our equal opportunity disparity got a lot smaller
+while keeping the accuracy relatively the same (Only &lt;1% loss).</p>
+</div>
+<section id="5-code-different-modeling-choices" class="cell markdown">
+<h2>5. Code: Different Modeling Choices</h2>
+</section>
+<div class="cell markdown">
+<p>We can add different weights to each gender to change our model to
+become more fair. Below we added more weight to male students when we
+train our model.</p>
+</div>
+<div class="cell code" data-execution_count="622">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.utils.class_weight <span class="im">import</span> compute_class_weight</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>custom_weights <span class="op">=</span> {</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>: <span class="fl">1.0</span>,  <span class="co"># Females</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>: <span class="fl">2.0</span>   <span class="co"># Males</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>weighted_model <span class="op">=</span> LogisticRegression(max_iter<span class="op">=</span><span class="dv">2000</span>, class_weight<span class="op">=</span>custom_weights)</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>weighted_model.fit(X_train, y_train)</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>weighted_y_pred <span class="op">=</span> weighted_model.predict(X_test)</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>accuracy <span class="op">=</span> weighted_model.score(X_test, y_test)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Accuracy: </span><span class="sc">{</span>accuracy<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Accuracy: 0.835
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="623">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df_eop <span class="op">=</span> X_test.copy()</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>df_eop[<span class="st">&#39;y_test&#39;</span>] <span class="op">=</span> y_test</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>df_eop[<span class="st">&#39;y_pred&#39;</span>] <span class="op">=</span> weighted_y_pred</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>tpr_genders <span class="op">=</span> {}</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> gender <span class="kw">in</span> df_eop[<span class="st">&#39;Gender&#39;</span>].unique():</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> df_eop[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> gender</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    y_true_group <span class="op">=</span> df_eop[mask][<span class="st">&#39;y_test&#39;</span>]</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    y_pred_group <span class="op">=</span> df_eop[mask][<span class="st">&#39;y_pred&#39;</span>]</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>    tn, fp, fn, tp <span class="op">=</span> confusion_matrix(y_true_group, y_pred_group).ravel()</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>    tpr <span class="op">=</span> tp <span class="op">/</span> (tp <span class="op">+</span> fn) <span class="cf">if</span> (tp <span class="op">+</span> fn) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    tpr_genders[gender] <span class="op">=</span> tpr</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;True Positive Rates by Gender:&quot;</span>)</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> gender, tpr <span class="kw">in</span> tpr_genders.items():</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>gender<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>tpr<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>tpr_vals <span class="op">=</span> <span class="bu">list</span>(tpr_genders.values())</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>eo_disparity <span class="op">=</span> <span class="bu">max</span>(tpr_vals) <span class="op">-</span> <span class="bu">min</span>(tpr_vals)</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Equal Opportunity Disparity: </span><span class="sc">{</span>eo_disparity<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>True Positive Rates by Gender:
+0: 0.988
+1: 0.924
+Equal Opportunity Disparity: 0.065
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>Here we can see while we lose accuracy by 1%, we can see that the
+fairness is greatly improved as the TPR are more similar.</p>
+</div>
+<section id="6-code-post-processing" class="cell markdown">
+<h2>6. Code: Post-processing</h2>
+</section>
+<div class="cell markdown">
+<p>We can change female predicted graduates to dropout so that we can
+offer support to more female students that may be struggling with their
+studies.</p>
+</div>
+<div class="cell code" data-execution_count="624">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df_predictions <span class="op">=</span> X_test.copy()</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>df_predictions[<span class="st">&#39;y_pred&#39;</span>] <span class="op">=</span> y_pred</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>df_predictions[<span class="st">&#39;y_test&#39;</span>] <span class="op">=</span> y_test</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>female_predicted_graduates <span class="op">=</span> df_predictions[</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    (df_predictions[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> <span class="dv">0</span>) <span class="op">&amp;</span> (df_predictions[<span class="st">&#39;y_pred&#39;</span>] <span class="op">==</span> <span class="dv">1</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="625">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>threshold <span class="op">=</span> df_predictions[<span class="st">&#39;Admission grade&#39;</span>].quantile(<span class="fl">0.15</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>low_grade_females <span class="op">=</span> female_predicted_graduates[female_predicted_graduates[<span class="st">&#39;Admission grade&#39;</span>] <span class="op">&lt;</span> threshold]</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>df_predictions.loc[low_grade_females.index, <span class="st">&#39;y_pred&#39;</span>] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>accuracy_modified <span class="op">=</span> accuracy_score(df_predictions[<span class="st">&#39;y_test&#39;</span>], df_predictions[<span class="st">&#39;y_pred&#39;</span>])</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Modified Model Accuracy: </span><span class="sc">{</span>accuracy_modified<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Modified Model Accuracy: 0.802
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="626">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df_eop <span class="op">=</span> X_test.copy()</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>df_eop[<span class="st">&#39;y_test&#39;</span>] <span class="op">=</span> y_test</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>df_eop[<span class="st">&#39;y_pred&#39;</span>] <span class="op">=</span> df_predictions[<span class="st">&#39;y_pred&#39;</span>]</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>tpr_genders <span class="op">=</span> {}</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> gender <span class="kw">in</span> df_eop[<span class="st">&#39;Gender&#39;</span>].unique():</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> df_eop[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> gender</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>    y_true_group <span class="op">=</span> df_eop[mask][<span class="st">&#39;y_test&#39;</span>]</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>    y_pred_group <span class="op">=</span> df_eop[mask][<span class="st">&#39;y_pred&#39;</span>]</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>    tn, fp, fn, tp <span class="op">=</span> confusion_matrix(y_true_group, y_pred_group).ravel()</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>    tpr <span class="op">=</span> tp <span class="op">/</span> (tp <span class="op">+</span> fn) <span class="cf">if</span> (tp <span class="op">+</span> fn) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>    tpr_genders[gender] <span class="op">=</span> tpr</span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;True Positive Rates by Gender:&quot;</span>)</span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> gender, tpr <span class="kw">in</span> tpr_genders.items():</span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>gender<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>tpr<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>tpr_vals <span class="op">=</span> <span class="bu">list</span>(tpr_genders.values())</span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>eo_disparity <span class="op">=</span> <span class="bu">max</span>(tpr_vals) <span class="op">-</span> <span class="bu">min</span>(tpr_vals)</span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Equal Opportunity Disparity: </span><span class="sc">{</span>eo_disparity<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>True Positive Rates by Gender:
+0: 0.863
+1: 0.888
+Equal Opportunity Disparity: 0.025
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p>Here we filter all females predicted to graduate. Then we located the
+bottom <strong>15%</strong> of all the students based on their admission
+grade and if they are a female previously predicted as graduate we flip
+to them dropout so we can identify female students that may need
+additional support. Here we can see TPR is very similar for both groups
+but our accuracy drops a fair bit (about 4%). Depending on our goals
+this would be acceptable like in the case where we need to find students
+that would have a higher chance of needing additional support.</p>
+</div>
+<section id="7-intervention-discussion" class="cell markdown">
+<h2>7. Intervention Discussion</h2>
+</section>
+<div class="cell markdown">
+<p>As a team we discussed that <strong>in-processing</strong> or
+<strong>post-processing</strong> techniques may be more appropriate to
+improve equal opportunity as it seems more reasonable to add more weight
+to different gender groups or pulling female students that have lower
+admission grades in order to offer them additional support. We thought
+that fabricating data and adding synthetic female students into our
+dataset doesn't seem right even though it offered us the highest
+accuracy between the different processing methods.</p>
+</div>
+<div class="cell markdown">
+<p>As we can see, all of our processing techniques caused us to have
+lower accuracy in determining graduate or dropout students but this is
+to be expected. The lowest drop in accuracy was our post-processing
+method which gave us an accuracy of 80% which was a 4% drop in accuracy
+compared to the base model without any fairness enforcement.</p>
+</div>
+<section id="other-research" class="cell markdown">
+<h2>Other Research</h2>
+</section>
+<section id="8-context-a-convex-framework-for-fair-regression"
+class="cell markdown">
+<h2>8. Context: <em>A Convex Framework for Fair Regression</em></h2>
+</section>
+<div class="cell markdown">
+<p><strong>A Convex Framework for Fair Regression</strong></p>
+<p>Main Topic Points</p>
+<ul>
+<li>Fairness Regularizers for Regression
+<ul>
+<li>Introduction to a fairness regularizer to compute the <em>Pareto
+Curve</em> which allows those to analyze the trade-off between the
+fairness and performance of a model to make informed decisions based on
+the users goals</li>
+</ul></li>
+<li><strong>"Price of Fairness" (PoF)</strong>
+<ul>
+<li>Numerical quantifying unit to show how much a model's accuracy is
+reduced when using fairness constraints</li>
+</ul></li>
+<li>Comparing different Fairness implementations
+<ul>
+<li>They compare fairness for <strong>different groups</strong> of
+people as well as tracking <strong>individual fairness</strong> or
+looking at different individuals with similar outcomes</li>
+</ul></li>
+</ul>
+</div>
+<div class="cell markdown">
+<p>The paper talks about different fairness implementations and their
+individual constraints. It also gives us a way to <strong>measure the
+effect of fairness implementations on the model's accuracy</strong> so
+users can choose which methodology to follow when introducing fairness
+into their models based on their goals. They also talk about how
+fairness trade offs are <strong>"highly domain-specific"</strong>
+reinforcing the importance of using metrics like PoF to determine how
+fairness should be used in our predictors.</p>
+</div>
+<section id="9-code-fairness-regularizer-and-pof-implementation"
+class="cell markdown">
+<h2>9. Code: Fairness Regularizer and PoF Implementation</h2>
+</section>
+<div class="cell code">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;data.csv&#39;</span>, delimiter<span class="op">=</span><span class="st">&#39;;&#39;</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[df[<span class="st">&#39;Target&#39;</span>] <span class="op">!=</span> <span class="st">&#39;Enrolled&#39;</span>]</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>columns_to_keep <span class="op">=</span> [</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Gender&#39;</span>,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Target&#39;</span>,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Marital status&#39;</span>,</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Application mode&#39;</span>,</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Previous qualification&#39;</span>,</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Previous qualification (grade)&#39;</span>,</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mother&#39;s qualification&quot;</span>,</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Father&#39;s qualification&quot;</span>,</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Admission grade&#39;</span>,</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Scholarship holder&#39;</span>,</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Age at enrollment&#39;</span>,</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Curricular units 1st sem (grade)&#39;</span>,</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Curricular units 2nd sem (grade)&#39;</span>,</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Tuition fees up to date&#39;</span>,</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;International&#39;</span></span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[columns_to_keep]</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a>label <span class="op">=</span> <span class="st">&#39;Target&#39;</span></span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>sensitive_attr <span class="op">=</span> <span class="st">&#39;Gender&#39;</span></span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>le_target <span class="op">=</span> LabelEncoder()</span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Target_encoded&#39;</span>] <span class="op">=</span> le_target.fit_transform(df[<span class="st">&#39;Target&#39;</span>])</span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a>df.drop(<span class="st">&#39;Target&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop(<span class="st">&#39;Target_encoded&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">&#39;Target_encoded&#39;</span>]</span>
+<span id="cb24-33"><a href="#cb24-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-34"><a href="#cb24-34" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.3</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb24-35"><a href="#cb24-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-36"><a href="#cb24-36" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LogisticRegression(max_iter<span class="op">=</span><span class="dv">2000</span>)</span>
+<span id="cb24-37"><a href="#cb24-37" aria-hidden="true" tabindex="-1"></a>model.fit(X_train, y_train)</span>
+<span id="cb24-38"><a href="#cb24-38" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model.predict(X_test)</span>
+<span id="cb24-39"><a href="#cb24-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-40"><a href="#cb24-40" aria-hidden="true" tabindex="-1"></a>accuracy <span class="op">=</span> model.score(X_test, y_test)</span>
+<span id="cb24-41"><a href="#cb24-41" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Accuracy: </span><span class="sc">{</span>accuracy<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Accuracy: 0.839
+</code></pre>
+</div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.base <span class="im">import</span> BaseEstimator, ClassifierMixin</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> FairLogisticRegression(BaseEstimator, ClassifierMixin):</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, fairness_weight<span class="op">=</span><span class="fl">0.0</span>, max_iter<span class="op">=</span><span class="dv">2000</span>):</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fairness_weight <span class="op">=</span> fairness_weight</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.model <span class="op">=</span> LogisticRegression(max_iter<span class="op">=</span>max_iter)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> fit(<span class="va">self</span>, X, y):</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.model.fit(X, y)</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> predict(<span class="va">self</span>, X):</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.model.predict(X)</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> fairness_loss(<span class="va">self</span>, X, y):</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>        y_pred <span class="op">=</span> <span class="va">self</span>.predict(X)</span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>        df_eval <span class="op">=</span> X.copy()</span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>        df_eval[<span class="st">&#39;y_true&#39;</span>] <span class="op">=</span> y</span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>        df_eval[<span class="st">&#39;y_pred&#39;</span>] <span class="op">=</span> y_pred</span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>        tpr_gender <span class="op">=</span> {}</span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> gender <span class="kw">in</span> df_eval[<span class="st">&#39;Gender&#39;</span>].unique():</span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a>            mask <span class="op">=</span> df_eval[<span class="st">&#39;Gender&#39;</span>] <span class="op">==</span> gender</span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>            y_true_group <span class="op">=</span> df_eval[mask][<span class="st">&#39;y_true&#39;</span>]</span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a>            y_pred_group <span class="op">=</span> df_eval[mask][<span class="st">&#39;y_pred&#39;</span>]</span>
+<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a>            tn, fp, fn, tp <span class="op">=</span> confusion_matrix(y_true_group, y_pred_group).ravel()</span>
+<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a>            tpr <span class="op">=</span> tp <span class="op">/</span> (tp <span class="op">+</span> fn) <span class="cf">if</span> (tp <span class="op">+</span> fn) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb26-28"><a href="#cb26-28" aria-hidden="true" tabindex="-1"></a>            tpr_gender[gender] <span class="op">=</span> tpr</span>
+<span id="cb26-29"><a href="#cb26-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-30"><a href="#cb26-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-31"><a href="#cb26-31" aria-hidden="true" tabindex="-1"></a>        tpr_values <span class="op">=</span> <span class="bu">list</span>(tpr_gender.values())</span>
+<span id="cb26-32"><a href="#cb26-32" aria-hidden="true" tabindex="-1"></a>        tpr_disparity <span class="op">=</span> <span class="bu">max</span>(tpr_values) <span class="op">-</span> <span class="bu">min</span>(tpr_values)</span>
+<span id="cb26-33"><a href="#cb26-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-34"><a href="#cb26-34" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.fairness_weight <span class="op">*</span> tpr_disparity</span>
+<span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-36"><a href="#cb26-36" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> score(<span class="va">self</span>, X, y):</span>
+<span id="cb26-37"><a href="#cb26-37" aria-hidden="true" tabindex="-1"></a>        base_accuracy <span class="op">=</span> <span class="va">self</span>.model.score(X, y)</span>
+<span id="cb26-38"><a href="#cb26-38" aria-hidden="true" tabindex="-1"></a>        fairness_penalty <span class="op">=</span> <span class="va">self</span>.fairness_loss(X, y)</span>
+<span id="cb26-39"><a href="#cb26-39" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> base_accuracy <span class="op">-</span> fairness_penalty</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="643">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>fairness_weights <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">7</span>, num<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>accuracy_results <span class="op">=</span> []</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>fairness_results <span class="op">=</span> []</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> weight <span class="kw">in</span> fairness_weights:</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>    fair_model <span class="op">=</span> FairLogisticRegression(fairness_weight<span class="op">=</span>weight)</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>    fair_model.fit(X_train, y_train)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>    accuracy <span class="op">=</span> fair_model.score(X_test, y_test)</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>    fairness_penalty <span class="op">=</span> fair_model.fairness_loss(X_test, y_test)</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>    accuracy_results.append(accuracy)</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    fairness_results.append(fairness_penalty)</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Fairness Weight: </span><span class="sc">{</span>weight<span class="sc">}</span><span class="ss"> | Accuracy: </span><span class="sc">{</span>accuracy<span class="sc">:.3f}</span><span class="ss"> | TPR Disparity: </span><span class="sc">{</span>fairness_penalty<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Fairness Weight: 0.0 | Accuracy: 0.839 | TPR Disparity: 0.000
+Fairness Weight: 0.3684210526315789 | Accuracy: 0.800 | TPR Disparity: 0.039
+Fairness Weight: 0.7368421052631579 | Accuracy: 0.761 | TPR Disparity: 0.078
+Fairness Weight: 1.1052631578947367 | Accuracy: 0.722 | TPR Disparity: 0.117
+Fairness Weight: 1.4736842105263157 | Accuracy: 0.683 | TPR Disparity: 0.156
+Fairness Weight: 1.8421052631578947 | Accuracy: 0.644 | TPR Disparity: 0.195
+Fairness Weight: 2.2105263157894735 | Accuracy: 0.605 | TPR Disparity: 0.234
+Fairness Weight: 2.5789473684210527 | Accuracy: 0.566 | TPR Disparity: 0.274
+Fairness Weight: 2.9473684210526314 | Accuracy: 0.527 | TPR Disparity: 0.313
+Fairness Weight: 3.31578947368421 | Accuracy: 0.488 | TPR Disparity: 0.352
+Fairness Weight: 3.6842105263157894 | Accuracy: 0.449 | TPR Disparity: 0.391
+Fairness Weight: 4.052631578947368 | Accuracy: 0.409 | TPR Disparity: 0.430
+Fairness Weight: 4.421052631578947 | Accuracy: 0.370 | TPR Disparity: 0.469
+Fairness Weight: 4.789473684210526 | Accuracy: 0.331 | TPR Disparity: 0.508
+Fairness Weight: 5.157894736842105 | Accuracy: 0.292 | TPR Disparity: 0.547
+Fairness Weight: 5.526315789473684 | Accuracy: 0.253 | TPR Disparity: 0.586
+Fairness Weight: 5.894736842105263 | Accuracy: 0.214 | TPR Disparity: 0.625
+Fairness Weight: 6.263157894736842 | Accuracy: 0.175 | TPR Disparity: 0.664
+Fairness Weight: 6.63157894736842 | Accuracy: 0.136 | TPR Disparity: 0.703
+Fairness Weight: 7.0 | Accuracy: 0.097 | TPR Disparity: 0.742
+</code></pre>
+</div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>baseline_accuracy <span class="op">=</span> accuracy_results[<span class="dv">0</span>]</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>pof_results <span class="op">=</span> [acc <span class="op">/</span> baseline_accuracy <span class="cf">for</span> acc <span class="kw">in</span> accuracy_results]</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Price of Fairness (PoF) Analysis:&quot;</span>)</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> weight, pof <span class="kw">in</span> <span class="bu">zip</span>(fairness_weights, pof_results):</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Fairness Weight: </span><span class="sc">{</span>weight<span class="sc">}</span><span class="ss"> | PoF: </span><span class="sc">{</span>pof<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+Price of Fairness (PoF) Analysis:
+Fairness Weight: 0.0 | PoF: 1.000
+Fairness Weight: 0.3684210526315789 | PoF: 0.953
+Fairness Weight: 0.7368421052631579 | PoF: 0.907
+Fairness Weight: 1.1052631578947367 | PoF: 0.860
+Fairness Weight: 1.4736842105263157 | PoF: 0.814
+Fairness Weight: 1.8421052631578947 | PoF: 0.767
+Fairness Weight: 2.2105263157894735 | PoF: 0.721
+Fairness Weight: 2.5789473684210527 | PoF: 0.674
+Fairness Weight: 2.9473684210526314 | PoF: 0.628
+Fairness Weight: 3.31578947368421 | PoF: 0.581
+Fairness Weight: 3.6842105263157894 | PoF: 0.534
+Fairness Weight: 4.052631578947368 | PoF: 0.488
+Fairness Weight: 4.421052631578947 | PoF: 0.441
+Fairness Weight: 4.789473684210526 | PoF: 0.395
+Fairness Weight: 5.157894736842105 | PoF: 0.348
+Fairness Weight: 5.526315789473684 | PoF: 0.302
+Fairness Weight: 5.894736842105263 | PoF: 0.255
+Fairness Weight: 6.263157894736842 | PoF: 0.209
+Fairness Weight: 6.63157894736842 | PoF: 0.162
+Fairness Weight: 7.0 | PoF: 0.115
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="647">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">5</span>))</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>plt.plot(fairness_weights, accuracy_results, marker<span class="op">=</span><span class="st">&#39;o&#39;</span>, label<span class="op">=</span><span class="st">&#39;Accuracy&#39;</span>)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>plt.plot(fairness_weights, fairness_results, marker<span class="op">=</span><span class="st">&#39;s&#39;</span>, label<span class="op">=</span><span class="st">&#39;TPR Disparity (Fairness Penalty)&#39;</span>, color<span class="op">=</span><span class="st">&#39;red&#39;</span>)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Fairness Weight (λ)&quot;</span>)</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Metric Value&quot;</span>)</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Fairness-Accuracy Tradeoff&quot;</span>)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">5</span>))</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>plt.plot(fairness_weights, pof_results, marker<span class="op">=</span><span class="st">&#39;o&#39;</span>, label<span class="op">=</span><span class="st">&#39;Price of Fairness&#39;</span>)</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Fairness Weight (λ)&quot;</span>)</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;PoF&quot;</span>)</span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Price of Fairness (PoF) Curve&quot;</span>)</span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_9592290eb3cc4bb0865784da0c827ce9/6982f23d176c10ff90d8cbccbb114f32bb6a85a1.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_9592290eb3cc4bb0865784da0c827ce9/c2726046a18965103056a186dcaf6486e00b5121.png" /></p>
+</div>
+</div>
+<section id="10-discussion-research-paper-implementations"
+class="cell markdown">
+<h2>10. Discussion: Research Paper Implementations</h2>
+</section>
+<div class="cell markdown">
+<p>In the graphs above we saw that fairness weight and the price of
+fairness was linear which means as it got more and more fair accuracy
+also dropped so it no matter what the fairness weight was the accuracy
+dropped. We didn't really learn any new information from this as the
+fairness weights did not help us at all as it decreased our accuracy a
+lot while not getting us much closer group tpr values. Although the PoF
+and Fairness / Accuracy plots were very nice visually, we found it more
+efficient to implement our own fairness metrics.</p>
+</div>
+</body>
+</html>
