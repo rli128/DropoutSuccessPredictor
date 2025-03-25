@@ -1,7 +1,21 @@
 # **Student Dropout Prediction and Fairness Analysis**
 
 ## **Overview**
-This project analyzes student dropout risks using machine learning models while evaluating fairness across gender groups. The study implements fairness interventions to reduce disparities in model performance.
+This project analyzes student dropout risks using machine learning models while evaluating fairness across gender groups. Our dataset was compiled and used to recognize students that are more likely to droupout and giving them the additional support they need to make sure that they succeed. The study implements fairness interventions to reduce disparities in model performance. We realized that there was a lower classification of female students dropping out compared to male students so we balanced the model in order to easily identify both struggling males and females at an equal rate.
+
+Here are the features we used from the dataset
+- Marital status
+- Application mode
+- Previous qualification
+- Previous qualification (grade)
+- Mother's qualification
+- Father's qualification
+- Admission grade
+- Scholarship holder
+- Age at enrollment
+- Curricular units 1st sem (grade)
+- Curricular units 2nd sem (grade)
+- Tuition fees up to date
 
 ## **Dataset**
 - The dataset originates from a higher education institution and includes various student demographic and academic features.  
